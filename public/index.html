@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Engineering Works</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <h2>Suraj Engineering Works</h2>
+        </div>
+        <span class="menu-icon" onclick="toggleMenu()">☰</span> <!-- Menu icon -->
+        
+        <!-- Mobile-only icon (phone icon) -->
+        <i class="mobile-icon fas fa-phone"></i>
+    
+        <nav class="navbar">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Include Font Awesome script -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    
+
+    <section class="hero">
+        <h2>Engineering the Future</h2>
+        <p>Building and maintaining essential infrastructure for petrol pumps and power stations</p>
+    </section>
+
+    <main>            <!-- Slideshow container -->
+        <div class="slideshow-container">
+        
+            <!-- Slide 1: Completed Project -->
+            <div class="slide fade">
+                <img src="images/completed-project.jpg" alt="Completed Project">
+                <div class="caption">Our Latest Completed Project: High-Performance Petrol Pump(sample image)</div>
+            </div>
+        
+            <!-- Slide 2: Upcoming Project -->
+            <div class="slide fade">
+                <img src="images/upcoming-project.jpg" alt="Upcoming Project">
+                <div class="caption">Coming Soon: Advanced Electric Power Station(sample image)</div>
+            </div>
+        
+            <!-- Navigation arrows -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        
+        </div>
+        <script>
+            function toggleMenu() {
+    document.querySelector('.navbar').classList.toggle('active');
+}
+
+        </script>
+        
+        <!-- Dot indicators -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        
+        <script src="js/slideshow.js"></script>
+        
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <img src="images/power-icon.jpg" alt="Power Station Installation" class="service-icon">
+                    <h3>Electric Power Station Installation</h3>
+                    <p>Expertise in setting up and managing electric power stations for a variety of needs.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/petrol-icon.jpg" alt="Petrol Pump Setup" class="service-icon">
+                    <h3>Petrol Pump</h3>
+                    <p>Complete installation and setup of petrol pump facilities with quality assurance and safety standards.</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/maintenance-icon.jpg" alt="Maintenance & Repairs" class="service-icon">
+                    <h3>Maintenance & Repairs</h3>
+                    <p>Professional repair services for petrol pumps, electric stations, and other civil engineering structures.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>With over a decade of experience, Suraj Engineering Works has built a solid reputation for expertise in civil engineering projects focused on the energy and utilities sectors. From designing and constructing petrol pumps to the establishment and maintenance of electric power stations, we are committed to delivering exceptional quality and dependable service. Our team of skilled professionals works closely with partners and clients, ensuring each project meets the highest industry standards for safety, efficiency, and sustainability.
+
+                Our partnership with HPCL and other industry leaders has enabled us to stay at the forefront of engineering innovation, using advanced techniques and materials to enhance durability and efficiency. We pride ourselves on meticulous planning, precise execution, and an unwavering dedication to client satisfaction. At Suraj Engineering Works, reliability isn’t just a goal—it’s the foundation of our legacy and the key to our ongoing success in delivering sustainable, high-performance engineering solutions..</p>
+        </section>
+
+        <section id="team" class="section">
+            <h2>Operators</h2>
+            <div class="team-container">
+                <!-- Founder & CEO Card -->
+                <div class="team-card">
+                    <img src="images/founder-photo.jpg" alt="Rahul Singh" class="team-icon">
+                    <h2>Founder & CEO</h2>
+                    <h3>Rahul Singh</h3>
+                    <p>Rahul Singh, founder of Suraj Engineering Works, drives innovative, reliable solutions in energy infrastructure.</p>
+                </div>
+                
+                <!-- Partner Card -->
+                <div class="team-card">
+                    <img src="images/hpcl-logo.png" alt="HPCL Logo" class="team-icon">
+                    <h2>Our Partner</h2>
+                    <h3>HPCL</h3>
+                    <p>We proudly partner with HPCL, working together to deliver high-quality energy solutions throughout India.</p>
+                </div>
+        
+                <!-- Managing Director Card -->
+                <div class="team-card">
+                    <img src="images/director-photo.jpg" alt="Anoop Dalal" class="team-icon">
+                    <h2>Managing Director</h2>
+                    <h3>Anoop Dalal</h3>
+                    <p>Anoop Dalal steers Suraj Engineering Works' strategy and operations, ensuring mission excellence.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="map-container">
+            <div class="map-card">
+                <h2>Our Work Locations</h2>
+                <p>This map shows the key locations across India where we have been involved in significant projects, including petrol pump setups and electric power station installations.</p>
+                <img src="images/map.png" alt="India Map showing work locations" />
+            </div>
+        </section>
+        
+        <style>
+            /* Map container styling */
+            .map-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+            }
+        
+            .map-card {
+                background-color: #2a2a2a;
+                padding: 30px;
+                border-radius: 10px;
+                width: 80%;
+                max-width: 500px;
+                text-align: center;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            }
+        
+            .map-card h2 {
+                margin-bottom: 20px;
+            }
+        
+            .map-card img {
+                width: 100%;
+                max-width: 300px;
+                border-radius: 10px;
+            }
+        </style>
+        <section class="contact-container">
+            <div class="contact-card">
+                <h2>Contact Us</h2>
+                <form action="https://formspree.io/f/movqddav" method="POST" class="contact-form">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+        
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+        
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </section>
+    <section id="credits" class="section">
+        <h2>Developed By</h2>
+        <div class="developer-container">
+            <img src="images/developer-photo.jpg" alt="Developer Name" class="developer-photo">
+            <div class="developer-info">
+                <h3>Harshit</h3>
+               
+                <p>This website was made with ❤️ by by Harshit.</p>
+                <p>Connect with me on<a href="https://www.linkedin.com/in/harshit-singh-486285327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> LinkedIn</a>></p>
+
+            </div>
+        </div>
+    </section>       
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Reach out to us to discuss your project needs.</p>
+            <address>
+                <p>Email: esuraj24@gmail.com</p>
+                <p>Phone: 999 602 2530</p>
+                <p>Location: Azad Nagar, Hisar, Haryana-125001</p>
+            </address>
+  
+        
+        <style>
+            /* Developer credit section styling */
+            .developer-container {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                justify-content: center;
+                padding: 20px;
+                background-color: #2a2a2a;
+                border-radius: 10px;
+                max-width: 500px;
+                margin: 20px auto;
+                text-align: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+        
+            .developer-photo {
+                width: 60px; /* Smaller size */
+                height: 60px;
+                border-radius: 50%;
+                object-fit: cover;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            }
+        
+            .developer-info h3 {
+                margin: 0;
+                font-size: 1.2em;
+            }
+        
+            .developer-info p {
+                font-size: 1em;
+                line-height: 1.5;
+            }
+        </style>
+        
+
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Suraj Engineering Works. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
